@@ -1,0 +1,53 @@
+@import 'fonts.css';
+
+
+
+.footer {
+    background: #3FA5D5;
+    padding: 40px 0;
+}
+
+.footer-block {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-left__title {
+    color: #FFF;
+    font-family: 'RB';
+    font-size: 50px;
+    line-height: 59px;
+}
+
+.footer-right {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-right__tel {
+    color: #FFF;
+    font-family: 'RB';
+    font-size: 18px;
+    line-height: 21px;
+}
+
+.footer-right__mail {
+    color: #FFF;
+    font-size: 16px;
+    line-height: 19px;
+}
+@media (max-width: 576px){
+    .footer-block{
+        flex-direction: column;
+        text-align: center;
+    }
+    .footer-left__title{
+        font-size: 49px;
+        line-height: 49px;
+        margin-bottom: 20px;
+    }
+    .footer-right__tel{
+        margin-bottom: 10px;
+    }
+}

@@ -1,0 +1,68 @@
+@import 'fonts.css';
+
+
+.main {
+    margin-top: 30px;
+    margin-bottom: 45px;
+}
+
+.main-block {
+    display: flex;
+    justify-content: space-between;
+}
+
+.main-block__item {
+    max-width: 255px;
+    width: 100%;
+    border-radius: 15px;
+    background: #FFF;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 32px 18px 19px 18px;
+}
+
+.main-block__title {
+    color: #2A86B1;
+    text-align: center;
+    font-family: 'RB';
+    font-size: 20px;
+    line-height: 24px;
+    margin-bottom: 60px;
+    max-width: 180px;
+    width: 100%;
+}
+
+.main-block__icon {
+    font-size: 100px;
+    color: #3FA5D5;
+}
+
+.main-block__btn {
+    margin-top: 70px;
+}
+
+
+/* media */
+@media (max-width:1150px){
+    .main-block{
+        flex-wrap: wrap;
+        justify-content: space-around;
+        row-gap: 30px;
+    }
+    .main-block__item{
+        max-width: 45%;      
+    }
+    .main-block__title{
+        max-width: 280px;
+        width: 100%;
+    }
+}
+@media(max-width:576px){
+    .main-block{
+        padding: 0px 25px;
+    }
+    .main-block__item{
+        max-width: 100%;
+    }
+}
