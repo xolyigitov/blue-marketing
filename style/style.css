@@ -21,6 +21,7 @@ body {
 }
 
 .header__content {
+ 
     height: 500px;
     background: url(../images/headerBg.png) no-repeat center /cover white;
     border-radius: 14px;
@@ -99,6 +100,7 @@ body {
     transition: all 500ms;
     padding: 30px 15px;
     overflow: hidden;
+    z-index: 1;
 }
 
 .nav:hover {
@@ -179,7 +181,7 @@ body {
         margin-bottom: 50px;
     }
     .nav__menu-link{
-        margin-top: 20px;
+        margin-top: 15px;
     }
     #label {
         display: inline-block !important;
@@ -230,4 +232,12 @@ body {
     display: none;
     font-size: 45px;
     color: #2A86B1;
+}
+@media(max-width:430px){
+    .header__content-text{
+        flex-wrap: wrap;
+    }
+    .header__content{
+        padding-left: 20px;
+    }
 }
